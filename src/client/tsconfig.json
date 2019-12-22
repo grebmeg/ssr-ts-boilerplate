@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "outDir": "../../client/build/",
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true
+    },
+    "include": ["**/*"]
+}
