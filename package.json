@@ -1,18 +1,19 @@
 {
-  "name": "pb",
+  "name": "ssr-ts-boilerplate",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "",
-  "main": "index.js",
+  "main": "src/server/index.tsx",
+  "author": "Alexey Gemberg",
   "scripts": {
     "build": "npm run build:server && npm run build:client",
     "build:client": "webpack --config webpack.config.client.js",
     "build:server": "webpack --config webpack.config.server.js",
+    "dev": "npm run watch",
     "watch": "webpack --watch --progress --info-verbosity verbose --config webpack.config.server.js & nodemon --watch dist/server/ --exec node dist/server/",
     "client:watch": "webpack --watch --progress --info-verbosity verbose --config webpack.config.client.js",
     "start": "node dist/server"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
