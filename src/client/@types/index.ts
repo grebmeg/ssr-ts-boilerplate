@@ -1,5 +1,5 @@
 export interface MainState {
-    title: string;
+    count: number;
 }
 
 export interface State {
@@ -20,6 +20,4 @@ export interface ActionCreator<T> {
     (arg: T): ActionCreatorResult<T>;
 }
 
-export interface RemoveItem {
-    id: string;
-}
+export interface IncrementCount {}

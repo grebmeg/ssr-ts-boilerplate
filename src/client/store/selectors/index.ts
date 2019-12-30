@@ -1,3 +1,3 @@
 import {State} from '../../@types';
 
-export const titleSelector = (state: State) => state.main.title;
+export const countSelector = (state: State) => state.main.count;

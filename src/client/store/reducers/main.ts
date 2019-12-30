@@ -5,16 +5,19 @@ import {
 } from '../../@types';
 
 const initialState: MainState = {
-    title: 'Title',
+    count: 0,
 };
 
 export default function main(state: MainState = initialState, action: Action) {
     const { type } = action;
 
     switch (type) {
-        case ACTIONS.REMOVE_ITEM: {
+        case ACTIONS.INCREMENT_COUNT: {
+            const {count} = state;
+
             return {
-                ...state
+                ...state,
+                count: count + 1,
             };
         }
         default: {

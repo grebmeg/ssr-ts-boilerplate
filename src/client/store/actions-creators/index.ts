@@ -1,11 +1,12 @@
 import ACTIONS from "../actions";
-import {ActionCreator, RemoveItem} from '../../@types';
+import {
+    ActionCreator,
+    IncrementCount
+} from '../../@types';
 
-export const removeItem: ActionCreator<RemoveItem> = ({id}) => {
+export const incrementCount: ActionCreator<IncrementCount> = () => {
     return {
-        type: ACTIONS.REMOVE_ITEM,
-        payload: {
-            id
-        }
+        type: ACTIONS.INCREMENT_COUNT,
+        payload: {}
     };
 };

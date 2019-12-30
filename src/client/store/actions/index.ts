@@ -1,3 +1,3 @@
 export default {
-    REMOVE_ITEM: "REMOVE_ITEM"
+    INCREMENT_COUNT: 'INCREMENT_COUNT'
 };
